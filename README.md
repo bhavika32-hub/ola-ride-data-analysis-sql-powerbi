@@ -45,7 +45,7 @@ To identify key factors affecting ride cancellations and improve overall platfor
 - Total Bookings  
 - Total Revenue  
 - Total Revenue Loss 
-- Total Ride Success  
+- Total Successful Rides 
 - Overall Cancellation Rate  
 - Customer Cancellation %  
 - Driver Cancellation %  
