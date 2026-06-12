@@ -62,7 +62,7 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Highest bookings and cancellations observed on Monday, Tuesday, and Wednesday
 * Total revenue loss of ₹21M was observed due to cancellations and driver-related issues
 * 10% is customer canclled
-* 28% is driver canclled
+* 18% is driver canclled
 * ₹16M loss was due to ride cancellations, indicating high demand leakage  
 * ₹5M loss was due to driver not found cases, showing supply-side inefficiency  
 * Around 40% of incomplete rides were due to vehicle breakdown issues, indicating operational and maintenance gaps  
