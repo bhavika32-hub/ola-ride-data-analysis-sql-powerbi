@@ -33,6 +33,13 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Data included: booking status, cancellation reasons, driver behavior, ride details, and revenue impact  
 
 ---
+
+## Data Preparation:
+* Verified and corrected data types
+* Identified and removed exact duplicate records
+* Standardized inconsistent values for accurate analysis
+* Performed data quality checks before KPI calculation and dashboard development
+
 ## 📊 KPI Tracking
 
 - Total Bookings  
