@@ -58,7 +58,6 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * 30% cancellations occurred because drivers did not move toward pickup location, leading to customer frustration
 * Overall canclleation is 28%
 * Among customer-cancelled rides, approximately 25% were cancelled because drivers asked customers to cancel the ride.
-* 15% were caused by driver personal or vehicle-related issues  
 * Among customer-cancelled rides, approximately 14% were due to AC or comfort-related complaints.
 * Highest bookings and cancellations observed on Monday, Tuesday, and Wednesday
 * Total revenue loss of ₹21M was observed due to cancellations and driver-related issues  
