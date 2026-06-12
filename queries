@@ -1,0 +1,175 @@
+-- 1. Total Bookings by Vehicle Type
+
+SELECT
+    Vehicle_Type,
+    COUNT(*) AS Total_Bookings
+FROM ola_rides
+GROUP BY Vehicle_Type
+ORDER BY Total_Bookings DESC;
+
+
+-- 2. Revenue Contribution by Vehicle Type
+
+SELECT
+    Vehicle_Type,
+    SUM(Booking_Value) AS Total_Revenue
+FROM ola_rides
+WHERE Booking_Status = 'Success'
+GROUP BY Vehicle_Type
+ORDER BY Total_Revenue DESC;
+
+
+-- 3. Successful vs Cancelled Bookings
+
+SELECT
+    Booking_Status,
+    COUNT(*) AS Total_Bookings
+FROM ola_rides
+GROUP BY Booking_Status;
+
+
+-- 4. Total Rides per Customer
+
+SELECT
+    Customer_ID,
+    COUNT(*) AS Total_Rides
+FROM ola_rides
+GROUP BY Customer_ID;
+
+
+-- 5. Frequent Customers (5+ Rides)
+
+SELECT
+    Customer_ID,
+    COUNT(*) AS Total_Rides
+FROM ola_rides
+GROUP BY Customer_ID
+HAVING COUNT(*) >= 5;
+
+
+-- 6. Top Customers by Number of Bookings
+
+SELECT
+    Customer_ID,
+    COUNT(*) AS Total_Bookings
+FROM ola_rides
+GROUP BY Customer_ID
+ORDER BY Total_Bookings DESC
+LIMIT 10;
+
+
+-- 7. Customer vs Driver Cancellations
+
+SELECT
+    Booking_Status,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Booking_Status IN (
+    'Canceled by Customer',
+    'Canceled by Driver'
+)
+GROUP BY Booking_Status;
+
+
+-- 8. Customer Cancellation Reasons
+
+SELECT
+    Canceled_Rides_by_Customer AS Cancellation_Reason,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Canceled_Rides_by_Customer IS NOT NULL
+GROUP BY Canceled_Rides_by_Customer
+ORDER BY Total_Cancellations DESC;
+
+
+-- 9. Driver Cancellation Reasons
+
+SELECT
+    Canceled_Rides_by_Driver AS Cancellation_Reason,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Canceled_Rides_by_Driver IS NOT NULL
+GROUP BY Canceled_Rides_by_Driver
+ORDER BY Total_Cancellations DESC;
+
+
+-- 10. Vehicle-Type-Wise Cancellation Trends
+
+SELECT
+    Vehicle_Type,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Booking_Status IN (
+    'Canceled by Customer',
+    'Canceled by Driver'
+)
+GROUP BY Vehicle_Type
+ORDER BY Total_Cancellations DESC;
+
+
+-- 11. Location-Wise Cancellation Hotspots
+
+SELECT
+    Pickup_Location,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Booking_Status IN (
+    'Canceled by Customer',
+    'Canceled by Driver'
+)
+GROUP BY Pickup_Location
+ORDER BY Total_Cancellations DESC;
+
+
+-- 12. Average Driver and Customer Ratings
+
+SELECT
+    AVG(Driver_Ratings) AS Avg_Driver_Rating,
+    AVG(Customer_Rating) AS Avg_Customer_Rating
+FROM ola_rides;
+
+
+-- 13. Low-Rating + High-Cancellation Locations
+
+SELECT
+    Pickup_Location,
+    AVG(Driver_Ratings) AS Avg_Driver_Rating,
+    COUNT(*) AS Total_Cancellations
+FROM ola_rides
+WHERE Booking_Status IN (
+    'Canceled by Customer',
+    'Canceled by Driver'
+)
+GROUP BY Pickup_Location
+ORDER BY Total_Cancellations DESC;
+
+
+-- 14. High-Demand Pickup Locations
+
+SELECT
+    Pickup_Location,
+    COUNT(*) AS Total_Bookings
+FROM ola_rides
+GROUP BY Pickup_Location
+ORDER BY Total_Bookings DESC;
+
+
+-- 15. Payment Method Usage
+
+SELECT
+    Payment_Method,
+    COUNT(*) AS Total_Transactions
+FROM ola_rides
+GROUP BY Payment_Method
+ORDER BY Total_Transactions DESC;
+
+
+-- 16. Incomplete Rides and Reasons
+
+SELECT
+    Incomplete_Rides_Reason,
+    COUNT(*) AS Total_Rides
+FROM ola_rides
+WHERE Booking_Status = 'Incomplete'
+GROUP BY Incomplete_Rides_Reason
+ORDER BY Total_Rides DESC;
