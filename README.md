@@ -55,8 +55,6 @@ To identify key factors affecting ride cancellations and improve overall platfor
 
 ## Key Insights
 
-## Key Insights
-
 * The overall cancellation rate was **28%**.
 * Customer cancellations accounted for approximately **10%** of total bookings, while driver cancellations accounted for approximately **18%**.
 * Among customer-cancelled rides, around **30%** occurred because drivers did not move toward the pickup location, leading to customer frustration.
@@ -72,7 +70,6 @@ To identify key factors affecting ride cancellations and improve overall platfor
 **Overall Insight:** Driver behavior, vehicle-related issues, and peak-day operational pressure were the primary contributors to ride cancellations, incomplete rides, and revenue loss.
 
 
-**Overall Insight:** Driver behavior, vehicle condition, and peak-day operational pressure are the major contributors to cancellations and revenue loss.
 
 ---
 
@@ -111,46 +108,62 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 
 ## Business Recommendations (with Reason)
 
-### 1. Driver Accountability & Incentives
-* Penalize or warn drivers who do not move toward pickup location  
-* Provide incentives for drivers with high acceptance and low cancellation rates  
-**Reason:** Improves ride completion and driver responsibility  
+### 1. Improve Driver Pickup Compliance
+
+* Monitor drivers who frequently do not move toward the pickup location after accepting rides.
+* Introduce penalties for repeated violations and incentives for timely pickups.
+
+**Reason:** Around **30% of customer-cancelled rides** occurred because drivers did not move toward the pickup location.
 
 ---
 
-### 2. Driver Quality Monitoring
-* Identify drivers with repeated cancellations  
-* Provide training or restrict access for poor performers  
-**Reason:** Ensures platform reliability and service quality  
+### 2. Reduce Driver-Initiated Customer Cancellations
+
+* Track drivers who repeatedly ask customers to cancel rides.
+* Implement stricter monitoring and accountability measures for such cases.
+
+**Reason:** Around **25% of customer-cancelled rides** occurred because drivers asked customers to cancel the ride.
 
 ---
 
-### 3. Vehicle & Comfort Compliance
-* Regular vehicle inspections (AC, cleanliness, condition)  
-* Remove non-compliant drivers  
-**Reason:** Improves customer satisfaction and trust  
+### 3. Improve Vehicle Quality & Comfort Standards
+
+* Conduct regular inspections for AC, cleanliness, and overall vehicle condition.
+* Monitor and address repeated customer complaints related to ride comfort.
+
+**Reason:** Around **14% of customer-cancelled rides** were due to AC or comfort-related issues.
 
 ---
 
-### 4. Demand-Based Optimization
-* Focus driver availability on high-demand days (Mon–Wed)  
-* Optimize driver allocation during peak booking periods  
-**Reason:** Reduces cancellations during high-demand pressure  
+### 4. Strengthen Driver Quality Monitoring
+
+* Identify drivers with high cancellation rates due to personal or vehicle-related reasons.
+* Provide training, performance reviews, or restrictions for repeated offenders.
+
+**Reason:** Around **35% of driver-cancelled rides** were caused by driver personal or vehicle-related issues.
 
 ---
 
-### 5. Vehicle Maintenance & Breakdown Reduction
-* Regular vehicle health checks and preventive maintenance  
-* Monitor vehicles with repeated breakdown history  
-* Partner with service centers for quick repair turnaround  
-**Reason:** Around 40% incomplete rides were due to vehicle breakdowns, impacting ride completion and customer trust  
+### 5. Demand-Based Driver Allocation
+
+* Increase driver availability during high-demand periods.
+* Optimize driver allocation on Monday, Tuesday, and Wednesday to better match booking demand.
+
+**Reason:** The highest bookings and cancellations were observed on **Monday, Tuesday, and Wednesday**.
 
 ---
+
+### 6. Vehicle Maintenance & Breakdown Reduction
+
+* Perform regular vehicle health checks and preventive maintenance.
+* Monitor vehicles with repeated breakdown history and take corrective actions.
+
+**Reason:** Around **40% of incomplete rides** were caused by vehicle breakdown issues, impacting ride completion and customer trust.
 
 ## Success Measurement (Expected Impact)
 
 * Reduction in overall cancellation rate  
 * Improvement in ride success rate and customer satisfaction  
 * Decrease in driver-related complaints and repeated cancellations  
-* Reduction in revenue loss (~₹21M impact area)
+* Reduction in revenue loss (₹21M impact area)
 * Better operational efficiency through improved driver allocation  
