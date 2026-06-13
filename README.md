@@ -55,17 +55,22 @@ To identify key factors affecting ride cancellations and improve overall platfor
 
 ## Key Insights
 
-* 30% cancellations occurred because drivers did not move toward pickup location, leading to customer frustration
-* Overall canclleation is 28%
-* Among customer-cancelled rides, approximately 25% were cancelled because drivers asked customers to cancel the ride.
-* Among customer-cancelled rides, approximately 14% were due to AC or comfort-related complaints.
-* Highest bookings and cancellations observed on Monday, Tuesday, and Wednesday
-* Total revenue loss of ₹21M was observed due to cancellations and driver-related issues
-* 10% is customer canclled
-* 18% is driver canclled
-* ₹16M loss was due to ride cancellations, indicating high demand leakage  
-* ₹5M loss was due to driver not found cases, showing supply-side inefficiency  
-* Around 40% of incomplete rides were due to vehicle breakdown issues, indicating operational and maintenance gaps  
+## Key Insights
+
+* The overall cancellation rate was **28%**.
+* Customer cancellations accounted for approximately **10%** of total bookings, while driver cancellations accounted for approximately **18%**.
+* Among customer-cancelled rides, around **30%** occurred because drivers did not move toward the pickup location, leading to customer frustration.
+* Among customer-cancelled rides, approximately **25%** were cancelled because drivers asked customers to cancel the ride.
+* Among customer-cancelled rides, approximately **14%** were due to AC or comfort-related complaints.
+* Among driver-cancelled rides, approximately **35%** were caused by driver personal or vehicle-related issues.
+* The highest number of bookings and cancellations were observed on **Monday, Tuesday, and Wednesday**, indicating peak operational pressure during these days.
+* Total potential revenue loss of approximately **₹21M** was observed due to cancellations and driver-related issues.
+* Approximately **₹16M** of revenue loss was attributed to ride cancellations, indicating significant demand leakage.
+* Approximately **₹5M** of revenue loss was caused by Driver Not Found cases, highlighting supply-side inefficiencies.
+* Around **40%** of incomplete rides were caused by vehicle breakdown issues, indicating operational and maintenance gaps.
+
+**Overall Insight:** Driver behavior, vehicle-related issues, and peak-day operational pressure were the primary contributors to ride cancellations, incomplete rides, and revenue loss.
+
 
 **Overall Insight:** Driver behavior, vehicle condition, and peak-day operational pressure are the major contributors to cancellations and revenue loss.
 
