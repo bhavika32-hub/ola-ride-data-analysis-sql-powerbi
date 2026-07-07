@@ -1,7 +1,7 @@
 # Ola Ride Cancellation Analysis
 
 ---
-
+ 
 ## Problem Statement
 
 The objective was to analyze ride data to identify key reasons behind ride cancellations, incomplete rides, and associated revenue loss, and suggest data-driven strategies to improve booking success rate, operational efficiency, and customer experience.
