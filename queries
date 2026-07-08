@@ -173,3 +173,21 @@ FROM ola_rides
 WHERE Booking_Status = 'Incomplete'
 GROUP BY Incomplete_Rides_Reason
 ORDER BY Total_Rides DESC;
+
+-- 17. Total Revenue Loss (Cancelled + Incomplete Rides)
+SELECT
+    SUM(Booking_Value) AS Total_Revenue_Loss
+FROM ola_rides
+WHERE Booking_Status = 'Canceled by Customer'
+   OR Booking_Status = 'Canceled by Driver'
+   OR Booking_Status = 'Incomplete';
+
+-- 18. Revenue Loss by Status
+SELECT
+    Booking_Status,
+    SUM(Booking_Value) AS Revenue_Loss
+FROM ola_rides
+WHERE Booking_Status = 'Canceled by Customer'
+   OR Booking_Status = 'Canceled by Driver'
+   OR Booking_Status = 'Incomplete'
+GROUP BY Booking_Status;
