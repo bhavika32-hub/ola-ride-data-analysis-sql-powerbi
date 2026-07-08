@@ -77,33 +77,30 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 
 ### Key Areas Covered
 
-**1. Booking & Revenue Analysis**
-* Total bookings by vehicle type  
-* Revenue contribution by vehicle type  
-* Successful vs cancelled bookings  
-
-**2. Customer Analysis**
-* Total rides per customer  
-* Frequent customers (5+ rides)  
-* Top customers by number of bookings  
-
-**3. Cancellation Analysis (Core Focus)**
-* Customer vs Driver cancellations  
-* Cancellation reasons (frequency-based)  
-* Vehicle-type-wise cancellation trends  
-* Location-wise cancellation hotspots  
-
-**4. Ratings & Experience Analysis**
-* Average driver and customer ratings  
-* Low-rating + high-cancellation locations  
-
-**5. Operational Insights**
-* High-demand pickup locations  
-* Payment method usage (e.g., UPI)  
-* Incomplete rides and reasons  
-
----
-
+📊 KPI Tracking
+1. Booking & Revenue Analysis
+Total bookings by vehicle type
+Revenue contribution by vehicle type
+Successful vs cancelled bookings
+Revenue loss analysis (Cancelled & Incomplete rides)
+Revenue loss by booking status
+2. Customer Analysis
+Total rides per customer
+Frequent customers (5+ rides)
+Top customers by number of bookings
+3. Cancellation Analysis (Core Focus)
+Customer vs Driver cancellations
+Customer & Driver cancellation reason analysis
+Vehicle-wise cancellation trends
+Pickup location cancellation hotspots
+4. Ratings & Experience Analysis
+Average driver and customer ratings
+Driver vs Customer rating comparison
+Low-rating & high-cancellation locations
+5. Operational Insights
+High-demand pickup locations
+Payment method distribution
+Incomplete ride analysis and reasons
 ## Business Recommendations (with Reason)
 
 ### 1. Improve Driver Pickup Compliance
