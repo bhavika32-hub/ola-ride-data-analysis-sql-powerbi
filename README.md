@@ -55,7 +55,7 @@ To identify key factors affecting ride cancellations and improve overall platfor
 
 * The overall cancellation rate was **28%**.
 * Customer cancellations accounted for approximately **10%** of total bookings, while driver cancellations accounted for approximately **18%**.
-* Among customer-cancelled rides, around **28%** occurred because drivers did not move toward the pickup location, leading to customer frustration.
+* Among customer-cancelled rides, around **30%** occurred because drivers did not move toward the pickup location, leading to customer frustration.
 * Among customer-cancelled rides, approximately **25%** were cancelled because drivers asked customers to cancel the ride.
 * Among customer-cancelled rides, approximately **14%** were due to AC or comfort-related complaints.
 * Among driver-cancelled rides, approximately **35%** were caused by driver personal or vehicle-related issues.
