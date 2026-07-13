@@ -41,14 +41,18 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Performed data quality checks before KPI calculation and dashboard development
 
 ## 📊 KPI Tracking
-
-- Total Bookings  
-- sucessfull ride revenue
-- Total Revenue Loss 
-- Total Successful Rides 
-- Overall Cancellation Rate  
-- Customer Cancellation %  
-- Driver Cancellation %   
+- Total Bookings: 1,03,024
+- Pure Successful Ride Revenue: ₹32.83M (Incomplete Rides excluded)
+- Total Successful Rides: 60,041 (Incomplete Rides excluded)
+- Incomplete Ride Revenue: ₹2.25M
+- Incomplete Ride Count: 3,926
+- Canceled by Driver Revenue: ₹10.18M
+- Canceled by Customer Revenue: ₹5.77M
+- Driver Not Found Revenue: ₹5.50M
+- Total Revenue Loss (Cancellations + Driver Not Found + Incomplete): ₹23.70M
+- Overall Cancellation Rate: 28%
+- Customer Cancellation %: 10%
+- Driver Cancellation %: 18% 
 ---
 
 ## Key Insights
@@ -60,10 +64,12 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Among customer-cancelled rides, approximately **14%** were due to AC or comfort-related complaints.
 * Among driver-cancelled rides, approximately **35%** were caused by driver personal or vehicle-related issues.
 * The highest number of bookings and cancellations were observed on **Monday, Tuesday, and Wednesday**, indicating peak operational pressure during these days.
-* Total potential revenue loss of approximately **₹21M** was observed due to cancellations and driver-related issues.
-* Approximately **₹16M** of revenue loss was attributed to ride cancellations, indicating significant demand leakage.
-* Approximately **₹5M** of revenue loss was caused by Driver Not Found cases, highlighting supply-side inefficiencies.
+* Total potential revenue loss of approximately ₹23.70M was observed due to cancellations, Driver Not Found cases, and incomplete rides.
+* Approximately ₹15.95M of revenue loss was attributed to ride cancellations (Driver: ₹10.18M + Customer: ₹5.77M), indicating significant demand leakage.
+* Approximately ₹5.50M of revenue loss was caused by Driver Not Found cases, highlighting supply-side inefficiencies.
 * Around **40%** of incomplete rides were caused by vehicle breakdown issues, indicating operational and maintenance gaps.
+* Incomplete rides alone caused ₹2.25M in revenue leakage — separate from cancellations — mainly due to vehicle breakdown issues.
+* Of the total ₹56.53M revenue, only ₹32.83M (58%) came from fully successful rides; the rest ₹23.70M (42%) was lost across cancellations, driver-not-found, and incomplete rides.
 
 **Overall Insight:** Driver behavior, vehicle-related issues, and peak-day operational pressure were the primary contributors to ride cancellations, incomplete rides, and revenue loss.
 
@@ -171,5 +177,6 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 * Reduction in overall cancellation rate  
 * Improvement in ride success rate and customer satisfaction  
 * Decrease in driver-related complaints and repeated cancellations  
-* Reduction in revenue loss (₹21M impact area)
+* Reduction in revenue loss (₹23.70M impact area — cancellations + driver not found + incomplete rides)
+* Recovery of ₹2.25M lost specifically due to incomplete rides via vehicle maintenance improvements
 * Better operational efficiency through improved driver allocation  
