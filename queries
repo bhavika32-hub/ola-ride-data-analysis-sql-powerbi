@@ -183,11 +183,23 @@ WHERE Booking_Status = 'Canceled by Customer'
    OR Booking_Status = 'Incomplete';
 
 -- 18. Revenue Loss by Status
-SELECT
-    Booking_Status,
+SELECT 
+    CASE 
+        WHEN Booking_Status = 'Success' AND Incomplete_Rides = 'Yes' THEN 'Incomplete Ride'
+        WHEN Booking_Status = 'Success' AND Incomplete_Rides = 'No' THEN 'Pure Success'
+        WHEN Booking_Status = 'Canceled by Driver' THEN 'Canceled by Driver'
+        WHEN Booking_Status = 'Canceled by Customer' THEN 'Canceled by Customer'
+        WHEN Booking_Status = 'Driver Not Found' THEN 'Driver Not Found'
+    END AS Ride_Category,
+    COUNT(*) AS Total_Bookings,
     SUM(Booking_Value) AS Revenue_Loss
 FROM ola_rides
-WHERE Booking_Status = 'Canceled by Customer'
-   OR Booking_Status = 'Canceled by Driver'
-   OR Booking_Status = 'Incomplete'
-GROUP BY Booking_Status;
+GROUP BY 
+    CASE 
+        WHEN Booking_Status = 'Success' AND Incomplete_Rides = 'Yes' THEN 'Incomplete Ride'
+        WHEN Booking_Status = 'Success' AND Incomplete_Rides = 'No' THEN 'Pure Success'
+        WHEN Booking_Status = 'Canceled by Driver' THEN 'Canceled by Driver'
+        WHEN Booking_Status = 'Canceled by Customer' THEN 'Canceled by Customer'
+        WHEN Booking_Status = 'Driver Not Found' THEN 'Driver Not Found'
+    END
+ORDER BY Revenue_Loss DESC;
