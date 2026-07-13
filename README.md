@@ -87,7 +87,8 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 - Total bookings by vehicle type
 - Revenue contribution by vehicle type
 - Successful vs. cancelled bookings
-- Revenue loss analysis (Cancelled & Incomplete rides)
+- Revenue loss analysis (Cancelled by Driver, Cancelled by Customer, Driver Not Found)
+- Revenue loss analysis (Incomplete Rides — separate breakdown)
 - Revenue loss by booking status
 
 ---
