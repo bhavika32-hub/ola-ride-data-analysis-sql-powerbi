@@ -41,9 +41,9 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Performed data quality checks before KPI calculation and dashboard development
 
 ## 📊 KPI Tracking
-- Total Bookings: 1,03,024
+- Total Bookings: 103.02k
 - Pure Successful Ride Revenue: ₹32.83M (Incomplete Rides excluded)
-- Total Successful Rides: 60,041 (Incomplete Rides excluded)
+- Total Successful Rides: 60.04k (Incomplete Rides excluded)
 - Incomplete Ride Revenue: ₹2.25M
 - Incomplete Ride Count: 3,926
 - Canceled by Driver Revenue: ₹10.18M
@@ -68,7 +68,7 @@ To identify key factors affecting ride cancellations and improve overall platfor
 * Approximately ₹15.95M of revenue loss was attributed to ride cancellations (Driver: ₹10.18M + Customer: ₹5.77M), indicating significant demand leakage.
 * Approximately ₹5.50M of revenue loss was caused by Driver Not Found cases, highlighting supply-side inefficiencies.
 * Around **40%** of incomplete rides were caused by vehicle breakdown issues, indicating operational and maintenance gaps.
-* Among incomplete rides, approximately **41%** were caused by customer-driven demand changes (e.g., last-minute change of plan or requirement), making it the single largest reason — even slightly ahead of vehicle breakdown issues (40%).
+* Among incomplete rides, approximately **40%**(40.78%) were caused by customer-driven demand changes (e.g., last-minute change of plan or requirement), making it the single largest reason — even slightly ahead of vehicle breakdown issues (40.52%).
 * Incomplete rides alone caused ₹2.25M in revenue leakage — separate from cancellations — mainly due to vehicle breakdown issues.
 * Of the total ₹56.53M revenue, only ₹32.83M (58%) came from fully successful rides; the rest ₹23.70M (42%) was lost across cancellations, driver-not-found, and incomplete rides.
 
@@ -177,7 +177,7 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 ### 6. soft survy
 * Consider a soft cancellation-reason survey to understand root causes (change of plan, wrong booking, urgency change) and address recurring patterns.
 
-**Reason:** Around **41% of incomplete rides** were driven by customer demand changes, making it the leading cause of ride incompletion — even ahead of vehicle breakdown (40%)
+**Reason:** Around **40% of incomplete rides** were driven by customer demand changes, making it the leading cause of ride incompletion — even ahead of vehicle breakdown (40%)
 
 ## Success Measurement (Expected Impact)
 
