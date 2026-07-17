@@ -50,14 +50,14 @@ To identify key factors affecting ride cancellations and improve overall platfor
 - Canceled by Customer Revenue: ₹5.77M
 - Driver Not Found Revenue: ₹5.50M
 - Total Revenue Loss (Cancellations + Driver Not Found + Incomplete): ₹23.70M
-- Overall Cancellation Rate: 28%
-- Customer Cancellation %: 10%
-- Driver Cancellation %: 18% 
+- Overall Cancellation Rate: 31%
+- Customer Cancellation %: 20%
+- Driver Cancellation %: 11% 
 ---
 
 ## Key Insights
 
-* The overall cancellation rate was **3`%**.
+* The overall cancellation rate was **31%**.
 * Customer cancellations accounted for approximately **20%** of total bookings, while driver cancellations accounted for approximately **11%**.
 * Among customer-cancelled rides, around **30%** occurred because drivers did not move toward the pickup location, leading to customer frustration.
 * Among customer-cancelled rides, approximately **25%** were cancelled because drivers asked customers to cancel the ride.
@@ -174,7 +174,7 @@ SQL was used to extract insights, calculate KPIs, and understand booking, cancel
 
 **Reason:** Around **40% of incomplete rides** were caused by vehicle breakdown issues, impacting ride completion and customer trust.
 
-### 6. soft survy
+### 7. soft survy
 * Consider a soft cancellation-reason survey to understand root causes (change of plan, wrong booking, urgency change) and address recurring patterns.
 
 **Reason:** Around **40% of incomplete rides** were driven by customer demand changes, making it the leading cause of ride incompletion — even ahead of vehicle breakdown (40%)
